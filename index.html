@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden numbers game</title>
+    <link rel="icon" type="images/x-icon" href="https://cdn.icon-icons.com/icons2/4216/PNG/512/team_graph_marketing_strategy_management_business_icon_263037.png" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="game">
+    <div class="start">
+        <h2>Golden numbers game</h2>
+        <h3>Required: Guess 4 different numbers</h3>
+        <div id="seting">
+            <h3>From :</h3>
+            <h3 id="from">1</h3>
+            <h3>-</h3>
+            <h3>To :</h3>
+            <input type="number" required id="max">
+        </div>
+        <div id="click">
+            <h3>To start the game</h3>
+        <button onclick="seting()">Click Here</button>
+        </div>
+        
+    </div>
+    <div class="enter">
+        <div id="Time">
+            <h2 id="show">00:00:00</h2>
+        </div>
+        
+        <input type="number" placeholder="num 1" required id="g1">
+        <input type="number" placeholder="num 2" required id="g2" >
+        <input type="number" placeholder="num 3" required id="g3" >
+        <input type="number" placeholder="num 4" required id="g4" >
+
+    </div>
+    <div class="output">
+        <br>
+        <h1 id="r"></h1>
+        <h1 id="rr"></h1>
+    </div>
+    <div class="but">
+        <button onclick="NewGame()">New Game</button>
+        <button onclick="CheckNum()" id="try">Try</button>
+        
+    </div>
+    
+</div>
+
+<script src="logic.js"></script>
+    
+</body>
+</html>
